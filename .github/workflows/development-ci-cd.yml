@@ -3,7 +3,7 @@ name: CI/CD-main
 on:
     push:
         branches:
-            - main
+            - development
     workflow_dispatch:
 
 jobs:
