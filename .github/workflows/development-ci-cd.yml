@@ -22,4 +22,4 @@ jobs:
               run: dotnet restore
 
             - name: Build solution
-              run: dotnet build ./Weather --configuration Release --no-restore
+              run: dotnet build ./Weather/Weather.sln --configuration Release --no-restore
