@@ -8,24 +8,24 @@ namespace Weather.Api.UnitTests.Controllers;
 [TestFixture]
 public class WeatherForecastControllerTests
 {
-	private IMock<ILogger<WeatherForecastController>> _logger;
+    private IMock<ILogger<WeatherForecastController>> _logger;
 
-	[SetUp]
-	public void TestSetup()
-	{
-		_logger = new Mock<ILogger<WeatherForecastController>>();
-	}
+    [SetUp]
+    public void TestSetup()
+    {
+        _logger = new Mock<ILogger<WeatherForecastController>>();
+    }
 
-	[Test]
-	public void Init()
-	{
-		// Arrange
-		var controller = new WeatherForecastController(_logger.Object);
+    [Test]
+    public void Init()
+    {
+        // Arrange
+        var controller = new WeatherForecastController(_logger.Object);
 
-		// Act
-		var result = controller.Get();
+        // Act
+        var result = controller.Get();
 
-		// Assert
-		result.Should().BeOfType<WeatherForecast[]>();
-	}
+        // Assert
+        result.Should().BeOfType<WeatherForecast[]>();
+    }
 }

@@ -31,4 +31,8 @@
     <ProjectReference Include="..\Weather.Api\Weather.Api.csproj" />
   </ItemGroup>
 
+    <PropertyGroup>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    </PropertyGroup>
+
 </Project>
